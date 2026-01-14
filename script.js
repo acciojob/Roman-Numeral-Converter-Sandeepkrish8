@@ -1,5 +1,5 @@
 function convertToRoman(num) {
-  num = Number(num); // 🔥 IMPORTANT FIX (string → number)
+  num = Number(num);
 
   if (num === 0) return "";
 
@@ -34,7 +34,7 @@ function convertToRoman(num) {
 
 // DO NOT change anything below
 function main() {
-    const num = +document.getElementById("number-input").value;
-    const ans = convertToRoman(num);
-    document.getElementById("ans").innerText = ans;
+  const num = +document.getElementById("number-input").value;
+  const ans = convertToRoman(num);
+  document.getElementById("ans").innerText = ans;
 }
